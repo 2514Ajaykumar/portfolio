@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasula Ajay Kumar - Portfolio</title>
+    <meta name="description" content="Portfolio of Pasula Ajay Kumar - Software Developer, AI Enthusiast, and Web Developer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">PAK</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <img src="profile.png" alt="Pasula Ajay Kumar" class="profile-photo" onload="this.previousElementSibling.style.display='none';" onerror="this.style.display='none';" />
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-name">Pasula Ajay Kumar</h1>
+                    <div class="hero-title">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Full-Stack Developer | AI & Machine Learning Enthusiast | Building intelligent solutions with modern technologies
+                    </p>
+                    <button class="btn-primary" id="downloadBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download Resume</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
+                <div class="education-header">
+                    <div class="university-logo-container">
+                        <img src="https://sru.edu.in/images/sr-university-logo.png" 
+                             alt="SR University Logo" 
+                             class="university-logo"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-fallback" style="display: none;">
+                            <span class="fallback-text">SRU</span>
+                        </div>
+                    </div>
+                    <div class="education-info">
+                        <h3 class="university-name">SR University</h3>
+                        <p class="degree">B.Tech in Computer Science & Engineering</p>
+                        <p class="duration">Nov 2023 –  2027</p>
+                        <p class="cgpa">CGPA: <span class="highlight">8.7 / 10</span></p>
+                    </div>
+                </div>
+                <div class="courses">
+                    <h4>Relevant Courses:</h4>
+                    <div class="course-tags">
+                        <span class="course-tag">Machine Learning</span>
+                        <span class="course-tag">Data Structures</span>
+                        <span class="course-tag">Operating Systems</span>
+                        <span class="course-tag">Design & Analysis of Algorithms</span>
+                        <span class="course-tag">Python</span>
+                        <span class="course-tag">Java</span>
+                        <span class="course-tag">DBMS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card card-pink">
+                    <div class="experience-header">
+                        <div class="company-logo-container">
+                            <div class="logo-fallback">
+                                <span class="fallback-text">AICTE</span>
+                            </div>
+                        </div>
+                        <div class="company-info">
+                            <h3 class="company-name">AICTE</h3>
+                            <p class="role">Generative AI Intern</p>
+                            <p class="duration">July 2024 – Sep 2024</p>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <div class="check-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Gained hands-on experience in <span class="highlight">Generative AI</span>, machine learning models, and prompt engineering</span>
+                        </div>
+                        <div class="achievement">
+                            <div class="check-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Built <span class="highlight">AI-driven solutions</span> demonstrating intelligent automation and real-world data processing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card card-blue">
+                    <div class="experience-header">
+                        <div class="company-logo-container">
+                            <div class="logo-fallback">
+                                <span class="fallback-text">CS</span>
+                            </div>
+                        </div>
+                        <div class="company-info">
+                            <h3 class="company-name">CodSoft</h3>
+                            <p class="role">Web Development Intern</p>
+                            <p class="duration">Nov 2024 – Dec 2024</p>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <div class="check-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Constructed a personal portfolio showcasing web development skills, achieving <span class="highlight">500+ unique visits</span> in the first month through strategic SEO</span>
+                        </div>
+                        <div class="achievement">
+                            <div class="check-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20,6 9,17 4,12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Applied UI/UX best practices (Flexbox, Grid, Tailwind) to improve engagement and reduce bounce rate by <span class="highlight">30%</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="projects section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+            <!-- AI Interview Coach Project -->
+            <div class="project-card card-pink">
+                <div class="project-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="project-title">AI Interview Coach</h3>
+                <p class="project-date">Jan 2026 – Mar 2026</p>
+                <p class="project-description">
+                    Developed an AI-powered interview preparation platform that generates interview questions, evaluates user responses, and provides personalized feedback to improve technical and behavioral interview performance.
+                </p>
+                <p class="project-features">
+                    Built and deployed a full-stack application integrating frontend interfaces with backend APIs to simulate real interview scenarios, manage interview sessions, and deliver real-time feedback.
+                </p>
+                <a href="#" class="project-demo-button" title="Live Demo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>View Project</span>
+                </a>
+            </div>
+            
+            <!-- Student Performance Prediction Project -->
+            <div class="project-card card-blue">
+                <div class="project-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16v16H4z"></path>
+                        <line x1="8" y1="8" x2="16" y2="8"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                        <line x1="8" y1="16" x2="12" y2="16"></line>
+                    </svg>
+                </div>
+                <h3 class="project-title">Student Performance Prediction</h3>
+                <p class="project-date">Feb 2025 – April 2025</p>
+                <p class="project-description">
+                    Built a machine learning web application using Flask and Scikit-learn to predict student academic performance based on inputs such as study time, parental education, and previous scores.
+                </p>
+                <p class="project-features">
+                    Implemented data preprocessing, model training pipelines, and an interactive web interface, deploying the application on Render for real-time prediction through a browser.
+                </p>
+                <a href="#" class="project-demo-button" title="View Project">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>View Project</span>
+                </a>
+            </div>
+
+            <!-- AI Deep Research Agent Project -->
+            <div class="project-card card-purple">
+                <div class="project-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+                <h3 class="project-title">AI Deep Research Agent</h3>
+                <p class="project-date">Jan 2026 – Apr 2026</p>
+                <p class="project-description">
+                    Built a production-level AI Deep Research Agent using LangGraph that performs multi-step reasoning (understanding, research, and report generation) to handle complex queries intelligently.
+                </p>
+                <p class="project-features">
+                    Built a full-stack system with React frontend and Node.js proxy server, integrating GROQ and Tavily APIs for real-time data retrieval. Resolved CORS and API authentication issues, ensuring robustness.
+                </p>
+                <a href="#" class="project-demo-button" title="View Project">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>View Project</span>
+                </a>
+            </div>
+            <div class="project-card card-purple">
+    <div class="project-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 12l4-4 4 4 4-4 4 4"></path>
+            <circle cx="12" cy="12" r="10"></circle>
+        </svg>
+    </div>
+
+    <h3 class="project-title">Survival Shooter Game</h3>
+    <p class="project-date">2025</p>
+
+    <p class="project-description">
+        Developed a 3D Survival Shooter Game using Unity, featuring real-time player movement, shooting mechanics, and enemy AI behavior for an engaging gameplay experience.
+    </p>
+
+    <p class="project-features">
+        Implemented core game systems including health management, enemy spawning, collision detection, and responsive controls using C#. Designed immersive environments and optimized performance for smooth gameplay.
+    </p>
+
+    <a href="https://github.com/2514Ajaykumar/Survival-Shooter-game" target="_blank" class="project-demo-button" title="View Project">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        <span>View Project</span>
+    </a>
+</div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Skills Section - 2x2 Neon Grid -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-neon-grid">
+                <div class="skill-category card-pink">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card-blue">
+                    <h3 class="category-title">Web Technologies</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card-purple">
+                    <h3 class="category-title">Databases & Tools</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">Flask</span>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card-pink">
+                    <h3 class="category-title">Domains & Expertise</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Machine Learning</span>
+                        <span class="skill-badge">Data Science</span>
+                        <span class="skill-badge">Data Analysis</span>
+                        <span class="skill-badge">AI Solutions</span>
+                    </div>
+                </div>
+                <div class="skill-category card-purple">
+                    <h3 class="category-title">Frameworks & Platforms</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">LangGraph</span>
+                        <span class="skill-badge">Scikit-learn</span>
+                        <span class="skill-badge">Render</span>
+                        <span class="skill-badge">Power BI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card card-pink">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 15v7M6 4h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-1"></path>
+                            <path d="M12 15c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6"></path>
+                        </svg>
+                    </div>
+                    <h4 class="cert-name">Azure Fundamentals</h4>
+                    <p class="cert-issuer">Microsoft</p>
+                    <p class="cert-date">Sep 2025</p>
+                </div>
+
+                <div class="certification-card card-blue">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 15v7M6 4h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-1"></path>
+                            <path d="M12 15c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6"></path>
+                        </svg>
+                    </div>
+                    <h4 class="cert-name">AI Foundations Associate</h4>
+                    <p class="cert-issuer">Oracle</p>
+                    <p class="cert-date">Aug 2025</p>
+                </div>
+
+                <div class="certification-card card-purple">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 15v7M6 4h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-1"></path>
+                            <path d="M12 15c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6"></path>
+                        </svg>
+                    </div>
+                    <h4 class="cert-name">AI Fundamentals</h4>
+                    <p class="cert-issuer">IBM SkillsBuild</p>
+                    <p class="cert-date">Aug 2025</p>
+                </div>
+
+                <div class="certification-card card-pink">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 15v7M6 4h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-1"></path>
+                            <path d="M12 15c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6"></path>
+                        </svg>
+                    </div>
+                    <h4 class="cert-name">Cloud Foundations</h4>
+                    <p class="cert-issuer">Academy Graduate</p>
+                    <p class="cert-date">Oct 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Neon Dark Theme -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    Let's connect and discuss opportunities in data analysis, web development, or machine learning!
+                </p>
+                <div class="contact-grid">
+                    <a href="mailto:ajaynani2514@gmail.com" class="contact-card card-pink">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>ajaynani2514@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+91-7330903730" class="contact-card card-blue">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Phone</h4>
+                            <p>+91-7330903730</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-card card-purple">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h4>GitHub</h4>
+                            <p>github.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-card card-pink">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Pasula Ajay Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
